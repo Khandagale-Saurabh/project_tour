@@ -1,0 +1,40 @@
+#oip{
+    position: absolute;
+    width: 40px;
+    height:20px;
+    margin-top: -546px;
+}
+#lamo{
+    width: 18rem;
+}
+#crd{
+    position: absolute;
+}
+#resources{
+    position: absolute;
+}
+#visible{
+    /* display: block;
+    border-color: brown;
+    border-width: 12px;
+     */
+     display: block;
+    border-color: brown;
+   
+    border: 25px;
+    border-style: dashed;
+
+}
+#managerres{
+    position: absolute;
+    margin-top: -1200px;
+    margin-left: 287px;
+}
+    
+
+#setheightofres{
+    height:120px;
+    width:120px;
+   
+    
+}
