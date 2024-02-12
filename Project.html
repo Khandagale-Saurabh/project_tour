@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0%;
+      }
+
+      #main1 {
+        display: block;
+        margin: 0%;
+      }
+
+      #main {
+        display: block;
+      }
+
+      #close {
+        display: block;
+        position: absolute;
+        height: 214px;
+        width: 625px;
+        top: 820px;
+        left: 26px;
+        z-index: 2;
+      }
+
+      #unresolved {
+        display: block;
+        position: absolute;
+        top: 740px;
+        left: 16px;
+        z-index: 3;
+      }
+
+      #nolistner {
+        display: block;
+        position: absolute;
+
+        top: 871px;
+        height: 42px;
+        left: 26px;
+        z-index: 4;
+      }
+
+      #dialog {
+        display: block;
+        position: absolute;
+        top: 871px;
+        z-index: 4;
+      }
+
+      #duplicate {
+        display: block;
+        position: absolute;
+        top: 900px;
+        height: 38px;
+        left: 26px;
+        z-index: 4;
+      }
+
+      #duplicatedialog {
+        display: block;
+        position: absolute;
+        top: 940px;
+        left: 20px;
+        z-index: 4;
+      }
+
+      div#close11 {
+        position: absolute;
+        top: -87px;
+      }
+
+      #resources {
+        position: absolute;
+        display: block;
+        /* top: 162px;
+            right: -50px; */
+        margin-top: -839px;
+        margin-left: 856px;
+        z-index: 2;
+      }
+      div#resource_div {
+        z-index: 10;
+      }
+
+      #close_button_resourse {
+        /* position: absolute;
+    display: block;
+    top: 203px;
+    right: -46px;
+    z-index: 2; */
+        /* position: absolute;
+            display: block;
+            top: 134px;
+            right: -74px;
+            z-index: 2; */
+        position: absolute;
+        display: block;
+        /* top: 85px;
+            right: -74px; */
+        margin-top: -909px;
+        margin-left: 1241px;
+        z-index: 10;
+      }
+
+      #ask_lead {
+        position: absolute;
+        display: block;
+        /* top: 218px;
+            right: 261px; */
+        margin-top: -782px;
+        margin-left: 856px;
+        z-index: 2;
+      }
+
+      #follow_up {
+        position: absolute;
+        display: block;
+        /* top: 340px;
+            right: 245px; */
+        margin-top: -664px;
+        margin-left: 856px;
+        z-index: 2;
+      }
+
+      #ask_a_assistance {
+        position: absolute;
+        display: block;
+        margin-top: -559px;
+        margin-left: 856px;
+
+        z-index: 2;
+      }
+
+      #ask_a_lead_box {
+        position: absolute;
+        display: block;
+        margin-left: 1501px;
+        margin-top: -479px;
+        margin-right: 1306px;
+        z-index: 2;
+      }
+
+      #followup_dialogbox {
+        position: absolute;
+        display: block;
+
+        margin-top: -828px;
+        margin-left: 649px;
+        z-index: 2;
+      }
+
+      #main1 {
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      /* followup */
+      #dialogbox_followup {
+        position: absolute;
+        display: block;
+        /* top: 152px;
+            right: -651px; */
+        margin-top: -828px;
+        margin-right: 1306px;
+        margin-left: 658px;
+      }
+
+      #cal_button {
+        display: block;
+        position: absolute;
+        display: block;
+        margin-top: -685px;
+        margin-left: 853px;
+      }
+
+      #cal {
+        display: block;
+        position: absolute;
+        display: block;
+        /* margin-top: -685px;
+    margin-left: 853px; */
+        margin-top: -643px;
+        margin-left: 670px;
+      }
+
+      #pastccontact_dialog {
+        display: block;
+        position: absolute;
+        display: block;
+        margin-left: 658px;
+        margin-top: -829px;
+        margin-right: 1306px;
+        width: 1244px;
+      }
+
+      #pastconstct_link {
+        position: absolute;
+        display: block;
+        margin-top: -783px;
+        margin-left: 1075px;
+
+        z-index: 2;
+      }
+
+      #leadclose {
+        position: absolute;
+        display: block;
+        margin-left: 1857px;
+        margin-top: -479px;
+        margin-right: 1306px;
+        z-index: 2;
+      }
+
+      #page14followup {
+        position: absolute;
+        margin-top: 424px;
+        margin-left: 670px;
+      }
+
+      #page13followup {
+        position: absolute;
+        margin-top: 324px;
+        margin-left: 670px;
+        height: 54px;
+      }
+
+      #action_button {
+        position: absolute;
+        margin-top: 492px;
+        margin-left: 1763px;
+        width: 120px;
+        height: 29px;
+        z-index: 1;
+      }
+
+      #addioninfo {
+        position: absolute;
+        margin-top: 424px;
+        margin-left: 670px;
+      }
+
+      #addcontactbutton {
+        position: absolute;
+        margin-top: 362px;
+        margin-left: 659px;
+        width: 246px;
+        height: 34px;
+        z-index: 2;
+      }
+
+      #callbuttom {
+        position: absolute;
+        margin-top: -914px;
+        margin-left: 816px;
+        z-index: 1;
+      }
+
+      #callbuttom_action1 {
+        position: absolute;
+        margin-top: -836px;
+        margin-left: 2px;
+        z-index: 2;
+      }
+
+      #callbuttom_action2 {
+        position: absolute;
+        margin-top: -554px;
+        margin-left: 1559px;
+        z-index: 2;
+      }
+
+      #callhidebutton {
+        position: absolute;
+        margin-top: -765px;
+        margin-left: 30px;
+        z-index: 2;
+      }
+
+      #callcanclebutton {
+        position: absolute;
+        margin-top: -762px;
+        margin-left: 182px;
+
+        z-index: 2;
+      }
+
+      #transferbutton {
+        position: absolute;
+        margin-top: -911px;
+        margin-left: 879px;
+        z-index: 1;
+      }
+
+      #starttransfer {
+        position: absolute;
+        display: block;
+
+        margin-top: -828px;
+        margin-right: 1306px;
+        margin-left: 658px;
+        width: 1253px;
+      }
+
+      #start_button_transfer {
+        position: absolute;
+        margin-top: -801px;
+        margin-left: 1772px;
+        width: 120px;
+        z-index: 1;
+      }
+
+      #confirm_transform {
+        position: absolute;
+        display: block;
+        /* top: 152px;
+            right: -651px; */
+        margin-top: -828px;
+        margin-right: 1306px;
+        margin-left: 658px;
+        width: 1288px;
+      }
+
+      #close_button_transform {
+        position: absolute;
+        margin-top: -686px;
+        margin-left: 1461px;
+        z-index: 1;
+      }
+
+      #complete_contact_summary {
+        position: absolute;
+        display: block;
+        margin-top: -842px;
+        margin-left: 1px;
+        width: 1880px;
+        z-index: 7;
+      }
+
+      #order_summary {
+        position: absolute;
+        margin-top: -302px;
+        margin-left: 1010px;
+        z-index: 8;
+      }
+
+      #order_summary_dialog {
+        position: absolute;
+        display: block;
+        margin-top: -829px;
+        margin-left: 650px;
+        width: 1282px;
+        z-index: 8;
+      }
+
+      /* action summary wala */
+      #close_button_actionsummary {
+        position: absolute;
+        margin-top: 0px;
+        margin-left: 0px;
+        z-index: 6;
+      }
+
+      #yess_buttton {
+        position: absolute;
+        margin-left: 1411px;
+        margin-top: -517px;
+        width: 76px;
+      }
+
+      #closeforresorse {
+        position: absolute;
+        display: block;
+        margin-top: -839px;
+        opacity: 0;
+        margin-left: 1274px;
+        z-index: 1;
+      }
+      #top {
+        z-index: 3;
+        background-color: blue;
+        height: 300px;
+        width: 200px;
+      }
+      #all_closeforresorse {
+        position: absolute;
+        margin-top: 20px;
+        opacity: 0.1;
+        position: absolute;
+    margin-top: 20px;
+    /* opacity: 2.1; */
+    margin-top: 138px;
+    margin-left: 1807px;
+    height: 120px;
+    z-index: 20;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main1">
+      <img
+        src="./images/closebutton_resourse.png"
+        id="all_closeforresorse"
+        style="display: block"
+      />
+      <img src="./images/1.png" id="main" />
+      <img src="./images/unresolvedemail.png" id="unresolved" />
+      <!-- <img src="./images/select_reason.png" id="close" /> -->
+      <img src="./images/noreaondialog.png" id="dialog" style="display: none" />
+      <div id="close11">
+        <img src="./images/nolistner.png" id="nolistner" />
+        <img src="./images/duplicate.png" id="duplicate" />
+      </div>
+      <img
+        src="./images/duplicate_item.png"
+        id="duplicatedialog"
+        style="display: none"
+      />
+      <!-- Today 8/2/24 -->
+      <img
+        src="./images/resource_close_toggle.png"
+        id="close_button_resourse"
+      />
+      <div id="resource_div">
+        <img src="./images/resources.png" id="resources" />
+
+        <img src="./images/ask_a_lead.png" id="ask_lead" />
+        <img src="./images/follow_up.png" id="follow_up" />
+
+        <img src="./images/as_a_assistance.png" id="ask_a_assistance" />
+        <img
+          src="./images/closebutton_resourse.png"
+          id="closeforresorse"
+          style="display: none"
+        />
+        <img
+          src="./images/ask_assistancefollowup.png"
+          id="followup_dialogbox"
+          style="display: none"
+        />
+      </div>
+
+      <img
+        src="./images/ask_a_lead_box.png"
+        id="ask_a_lead_box"
+        style="display: none"
+      />
+      <img
+        src="./images/closebutton_resourse.png"
+        id="leadclose"
+        style="display: none"
+      />
+      <img
+        src="./images/follow_updialogbox.png"
+        id="dialogbox_followup"
+        style="display: none"
+      />
+      <img
+        src="./images/cal_button.png"
+        id="cal_button"
+        style="display: none"
+      />
+      <img src="./images/calander.png" id="cal" style="display: none" />
+
+      <!-- <img src="./images/pastc_contact.png" id="pastccontact_dialog" style="display: none;"> -->
+      <img
+        src="./images/demo3.png"
+        id="pastccontact_dialog"
+        style="display: none"
+      />
+
+      <!-- change on 12.44 -->
+      <img
+        src="./images/past_contact_link.png"
+        id="pastconstct_link"
+        style="display: block"
+      />
+
+      <!-- page14 onwards -->
+      <img src="./images/follow_up_page13.png" id="page13followup" />
+      <img
+        src="./images/Action_page_button.png"
+        id="action_button"
+        style="display: block"
+      />
+      <img
+        src="./images/14_follow_up.png"
+        id="page14followup"
+        style="display: none"
+      />
+      <img src="./images/addcontactinfobutton.png" id="addcontactbutton" />
+      <img
+        src="./images/additional contact info.png"
+        id="addioninfo"
+        style="display: none"
+      />
+
+      <!-- save sensative info button -->
+
+      <!-- callbutton -->
+      <img src="./images/call_button.png" id="callbuttom" />
+      <img
+        src="./images/call_button_action1.png"
+        id="callbuttom_action1"
+        style="display: none"
+      />
+      <img
+        src="./images/call_button_action2.png"
+        id="callbuttom_action2"
+        style="display: none"
+      />
+      <img
+        src="./images/call_hidebutton.png"
+        id="callhidebutton"
+        style="display: none"
+      />
+      <img src="./images/call_cancle_button.png" id="callcanclebutton" />
+
+      <!-- close contact  -->
+      <img src="./images/transfer_button.png" id="transferbutton" />
+
+      <img
+        src="./images/start_transfer.png"
+        id="starttransfer"
+        style="display: none"
+      />
+
+      <img
+        src="./images/start_button_transfer.png"
+        id="start_button_transfer"
+        id="startbtn"
+        style="display: none"
+      />
+      <img
+        src="./images/consfirm_transform.png"
+        id="confirm_transform"
+        style="display: none"
+      />
+      <img
+        src="./images/closebutton_resourse.png"
+        id="close_button_transform"
+        style="display: none"
+      />
+
+      <img
+        src="./images/complete_contact_summary.png"
+        id="complete_contact_summary"
+        style="display: none"
+      />
+      <img
+        src="./images/order_summary.png"
+        id="order_summary"
+        style="display: none"
+      />
+      <img
+        src="./images/order_summary_dialog.png"
+        id="order_summary_dialog"
+        style="display: none"
+      />
+      <img
+        src="./images/closebutton_resourse.png"
+        id="close_button_actionsummary"
+        style="display: none"
+      />
+
+      <img
+        src="./images/yes_button_.png"
+        id="yess_buttton"
+        style="display: none"
+      />
+    </div>
+    <script>
+      //yess button
+      function closeforresponse() {
+        let diveresp = document.getElementById("resource_div");
+        diveresp.style.display = "none";
+        // resources,ask_lead,follow_up,ask_a_assistance,pastconstct_link
+        // let enablereouse = document.getElementById("close_button_resourse");
+        // enablereouse.style.display = "block";
+        document.getElementById('closeforresorse').style.display='none'
+        document.getElementById('resources').style.display='none'
+        document.getElementById('ask_lead').style.display='none'
+        document.getElementById('follow_up').style.display='none'
+        document.getElementById('ask_a_assistance').style.display='none'
+        document.getElementById('pastconstct_link').style.display='none'
+        
+        
+        
+   console.log('Click on close response');
+      }
+      let resposeclose = document.getElementById("closeforresorse");
+      resposeclose.addEventListener("click", closeforresponse);
+      function yess_buttton1() {
+        let complete_contact_summary = document.getElementById(
+          "complete_contact_summary"
+        );
+
+        let closbutton = document.getElementById("close_button_actionsummary");
+        closbutton.style.display = "block";
+        document.getElementById("yess_buttton").style.display = "none";
+        let ord = document.getElementById("order_summary");
+        ord.style.display = "block";
+        complete_contact_summary.style.display = "block";
+        console.log("click yess");
+      }
+      let yess_butt = document.getElementById("yess_buttton");
+      yess_butt.addEventListener("click", yess_buttton1);
+
+      //close
+      function close_summary() {
+        let close = document.getElementById("complete_contact_summary");
+        let closbutton = document.getElementById("close_button_actionsummary");
+        close.style.display = "none";
+        close.style.display = "none";
+        closbutton.style.display = "none";
+        console.log("close complete_contact_summary click");
+      }
+      let y = document.getElementById("close_button_transform");
+      y.addEventListener("click", close_summary);
+
+      //order summary
+      function order_summary() {
+        let y = document.getElementById("order_summary_dialog");
+        let u = document.getElementById("complete_contact_summary");
+        u.style.display = "none";
+        if (y.style.display == "none") {
+          y.style.display = "block";
+        } else {
+          y.style.display = "none";
+        }
+        console.log("click order summary");
+      }
+
+      let order_sum = document.getElementById("order_summary");
+      order_sum.addEventListener("click", order_summary);
+
+      //start button
+
+      // function start_button_transfer() {
+      //     let data = document.getElementById('confirm_transform')
+      //     let starttranfer=document.getElementById('starttransfer')
+      //     let but=document.getElementById('start_button_transfer')
+      //     starttranfer.style.display='none'
+
+      //     data.style.display = 'block';
+      //     console.log('click on start button');
+      //     but.style.display='none';
+      // }
+      // let start_button_transfer1 = document.getElementById('start_button_transfer')
+      // start_button_transfer1.addEventListener('click', start_button_transfer)
+
+      //start button starnfer
+
+      // function start_button_transfer_fun()
+      // {
+      //     let btn=document.getElementById('start_button_transfer')
+      //     btn.style.display='none';
+      // }
+      // let btn_start_transfer=document.getElementById('start_button_transfer')
+      // btn_start_transfer.addEventListener('click',start_button_transfer_fun)
+
+      //close button of confirm
+
+      function closebuttonofconfirmtransfer() {
+        let clstnf = document.getElementById("closetransfer");
+        let close_button_transform1 = document.getElementById(
+          "close_button_transform"
+        );
+        let cnf = document.getElementById("confirm_transform");
+        cnf.style.display = "none";
+        close_button_transform1.style.display = "none";
+
+        // clstnf.style.display = 'none';
+      }
+      let close_button_transform1 = document.getElementById(
+        "close_button_transform"
+      );
+      close_button_transform1.addEventListener(
+        "click",
+        closebuttonofconfirmtransfer
+      );
+
+      //start button
+      function starttransfer() {
+        let startbtn = document.getElementById("start_button_transfer");
+        let cnf = document.getElementById("confirm_transform");
+        let yes = document.getElementById("yess_buttton");
+        let closex = document.getElementById("close_button_transform");
+        startbtn.style.display = "none";
+        cnf.style.display = "block";
+        yes.style.display = "block";
+        closex.style.display = "block";
+        console.log(startbtn.style.display);
+      }
+      // let tns = document.getElementById('transferbutton')
+      // tns.addEventListener('click', starttransfer)
+
+      let startbutton = document.getElementById("start_button_transfer");
+      startbutton.addEventListener("click", starttransfer);
+      //transfer button
+      function transferbutton() {
+        let maintnf = document.getElementById("starttransfer");
+        let startbtn = document.getElementById("start_button_transfer");
+        if (maintnf.style.display == "block") {
+          maintnf.style.display = "none";
+          startbtn.style.display = "none";
+        } else {
+          maintnf.style.display = "block";
+          startbtn.style.display = "block";
+        }
+        console.log(startbtn.style.display);
+      }
+
+      let transferbutton1 = document.getElementById("transferbutton");
+      transferbutton1.addEventListener("click", transferbutton);
+      //call cancle
+      function callcanclebutton() {
+        let action1 = document.getElementById("callbuttom_action1");
+        let action2 = document.getElementById("callbuttom_action2");
+        action1.style.display = "none";
+        action2.style.display = "none";
+      }
+      let callcanclebutton1 = document.getElementById("callcanclebutton");
+      callcanclebutton1.addEventListener("click", callcanclebutton);
+      //call hide button
+      function callhidebutton() {
+        let action2 = document.getElementById("callbuttom_action2");
+
+        action2.style.display = "none";
+      }
+      let hidebuttoncall = document.getElementById("callhidebutton");
+      hidebuttoncall.addEventListener("click", callhidebutton);
+      //call button
+      function callbuttom() {
+        let action1 = document.getElementById("callbuttom_action1");
+        let action2 = document.getElementById("callbuttom_action2");
+        let hide = document.getElementById("callhidebutton");
+        // hide.style.display='block';
+        if (
+          action1.style.display == "none" ||
+          action2.style.display == "none"
+        ) {
+          action1.style.display = "block";
+          action2.style.display = "block";
+          hide.style.display = "block";
+        } else {
+          action1.style.display = "none";
+          action2.style.display = "none";
+          hide.style.display = "none";
+        }
+        document.getElementById("followup_dialogbox").style.display = "none";
+        document.getElementById("pastccontact_dialog").style.display = "none";
+        document.getElementById("order_summary_dialog").style.display = "none";
+        document.getElementById("dialogbox_followup").style.display = "none";
+      }
+      let callbutton = document.getElementById("callbuttom");
+      callbutton.addEventListener("click", callbuttom);
+
+      // page 13 onwards
+
+      function page13followupButton() {
+        let pg = document.getElementById("page14followup");
+        if (pg.style.display == "none") {
+          pg.style.display = "block";
+        } else {
+          pg.style.display = "none";
+        }
+        console.log("click");
+      }
+      let page13followup_get = document.getElementById("page13followup");
+      page13followup_get.addEventListener("click", page13followupButton);
+
+      //add info button
+      function addioninfobutton() {
+        let pg = document.getElementById("addioninfo");
+        if (pg.style.display == "none") {
+          pg.style.display = "block";
+        } else {
+          pg.style.display = "none";
+        }
+        console.log("click");
+      }
+      let addbutton = document.getElementById("addcontactbutton");
+      addbutton.addEventListener("click", addioninfobutton);
+
+      // ===========================
+
+      function hideunresolve() {
+        let norepl = document.getElementById("nolistner");
+        let duplic = document.getElementById("duplicate");
+      }
+      function hideresource() {
+        var res = document.getElementById("resources");
+        var askl = document.getElementById("ask_lead");
+        var follup = document.getElementById("follow_up");
+        var ask_ass = document.getElementById("ask_a_assistance");
+        let pst = document.getElementById("pastconstct_link");
+
+        if (res.style.display == "none") {
+          res.style.display = "block";
+          askl.style.display = "block";
+          follup.style.display = "block";
+          ask_ass.style.display = "block";
+          pst.style.display = "block";
+        } else {
+          res.style.display = "none";
+          askl.style.display = "none";
+          follup.style.display = "none";
+          ask_ass.style.display = "none";
+          pst.style.display = "none";
+        }
+      }
+
+      function funask_lead() {
+        var askl = document.getElementById("ask_lead");
+        var askleadbox = document.getElementById("ask_a_lead_box");
+        let leadclose = document.getElementById("leadclose");
+        leadclose.style.display = "block";
+        askleadbox.style.display = "block";
+        console.log("click");
+      }
+
+      function funclose_button_resourse() {
+        var x = document.getElementById("close_button_resourse");
+        var closex = document.getElementById("closeforresorse");
+        var res = document.getElementById("resources");
+        var askl = document.getElementById("ask_lead");
+        var follup = document.getElementById("follow_up");
+        var ask_ass = document.getElementById("ask_a_assistance");
+        var pastconstct_link = document.getElementById("pastconstct_link");
+
+     if(res.style.display == "none")
+     {
+        closex.style.display="none"
+     }else
+     {
+        closex.style.display="block"
+        
+     }
+
+        if (res.style.display == "none") {
+          res.style.display = "block";
+          askl.style.display = "block";
+          follup.style.display = "block";
+          ask_ass.style.display = "block";
+          pastconstct_link.style.display = "block";
+          x.style.zIndex = "7";
+          x.style.display = "block";
+          closex.style.display = "block";
+        } else {
+          res.style.display = "none";
+          askl.style.display = "none";
+          follup.style.display = "none";
+          ask_ass.style.display = "none";
+          pastconstct_link.style.display = "none";
+          x.style.zIndex = "7";
+          closex.style.display = "none";
+        }
+      }
+
+      function fununresolved() {
+        var x = document.getElementById("close11");
+        let norepl = document.getElementById("nolistner");
+        let duplic = document.getElementById("duplicate");
+        var div11 = document.getElementById("close11");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+          norepl.style.display = "block";
+          duplic.style.display = "block";
+        } else {
+          x.style.display = "none";
+          norepl.style.display = "none";
+          duplic.style.display = "none";
+        }
+      }
+
+      function noreason() {
+        var x = document.getElementById("dialog");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      function duplicatecall() {
+        var x = document.getElementById("duplicatedialog");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+        console.log("Dup");
+      }
+
+      function followup_dialogbox() {
+        // hideresource()
+        let followup_dialogbox = document.getElementById("followup_dialogbox");
+        if (followup_dialogbox.style.display == "none") {
+          followup_dialogbox.style.display = "block";
+        } else {
+          followup_dialogbox.style.display = "none";
+        }
+      }
+      function togglefollowup() {
+        let followup_dialogbox = document.getElementById("dialogbox_followup");
+
+        let cal_button = document.getElementById("cal_button");
+
+        if (followup_dialogbox.style.display == "none") {
+          followup_dialogbox.style.display = "block";
+          cal_button.style.display = "block";
+        } else {
+          followup_dialogbox.style.display = "none";
+        }
+        hideresource();
+      }
+
+      function calanderbut() {
+        // hideresource()
+        let cal = document.getElementById("cal");
+        if (cal.style.display == "none") {
+          cal.style.display = "block";
+          console.log("cal non");
+        } else {
+          cal.style.display = "none";
+          console.log("cal blok");
+        }
+      }
+
+      function togglepastcontact() {
+        let cal = document.getElementById("pastccontact_dialog");
+        if (cal.style.display == "none") {
+          cal.style.display = "block";
+          console.log("cal non");
+        } else {
+          cal.style.display = "none";
+          console.log("cal blok");
+        }
+        hideresource();
+      }
+
+      function closebutton_lead() {
+        let leadclose = document.getElementById("leadclose");
+        var askleadbox = document.getElementById("ask_a_lead_box");
+
+        leadclose.style.display = "none";
+        askleadbox.style.display = "none";
+      }
+      let unresolved = document.getElementById("unresolved");
+
+      let reason = document.getElementById("close");
+      let nores = document.getElementById("nolistner");
+      let duplicateaction = document.getElementById("duplicate");
+      let ask_lead11 = document.getElementById("ask_lead");
+      let close_button_resourse = document.getElementById(
+        "close_button_resourse"
+      );
+      let followup_link = document.getElementById("follow_up");
+      let ask_ass_button = document.getElementById("ask_a_assistance");
+      let dialogbox_followup = document.getElementById("dialogbox_followup");
+      let cal_button = document.getElementById("cal_button");
+      let pastccontact_link = document.getElementById("pastconstct_link");
+      let leadclose = document.getElementById("leadclose");
+      leadclose.addEventListener("click", closebutton_lead);
+
+      unresolved.addEventListener("click", fununresolved);
+      nores.addEventListener("click", noreason);
+      duplicateaction.addEventListener("click", duplicatecall);
+      close_button_resourse.addEventListener("click", funclose_button_resourse);
+      ask_lead11.addEventListener("click", funask_lead);
+      followup_link.addEventListener("click", togglefollowup);
+      ask_ass_button.addEventListener("click", followup_dialogbox);
+      dialogbox_followup.addEventListener("click", togglefollowup);
+      cal_button.addEventListener("click", calanderbut);
+      pastccontact_link.addEventListener("click", togglepastcontact);
+      document
+        .getElementById("all_closeforresorse")
+        .addEventListener("click", () => {
+          document.getElementById("followup_dialogbox").style.display = "none";
+          document.getElementById("pastccontact_dialog").style.display = "none";
+          document.getElementById("order_summary_dialog").style.display =
+            "none";
+          document.getElementById("dialogbox_followup").style.display = "none";
+        });
+    </script>
+  </body>
+</html>
