@@ -2,6 +2,25 @@
 let img11='./OIP.jpg'
 let img2='./scr1.png'
 let res_img='./resources.webp'
+
+
+window.addEventListener('click', function(e){   
+    let maindiv=document.getElementById('maindiv')
+    if (document.getElementById('oip').contains(e.target)){
+      // Clicked in box
+      console.log('Inside BOX');
+      this.document.getElementById('wrong').style.display='none'
+    } else{
+      // Clicked outside the box
+      
+      console.log('OutSide BOX');
+      this.document.getElementById('wrong').style.display='block'
+      this.document.getElementById('wrong').style.position='absolute'
+      
+    }
+  });
+
+
 window.addEventListener('load',()=>{
     let maindiv=document.getElementById('maindiv')
     document.getElementById('oip').style.borderStyle='dotted';
